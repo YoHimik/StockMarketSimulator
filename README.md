@@ -22,7 +22,7 @@ o The orders arriving at the trading gateway need to be put into the correct ord
 
 Realization
 
-To interract with user uses to classes: Logger and MainCotroller. Logger has one function(+overload) for writing information to
+To interract with user uses two classes: Logger and MainCotroller. Logger has one function(+overload) for writing information to
 console and log file. MainController reads and handles user input. Also MainController starts and controlls MatchingEngine thread.
 For matching order uses class MatchingEngine, that every one second finds 'buy' order with min price and 'sell' order with max price,
 and if 'buy' order price lower than 'sell' order price, then MatchingEngine generates new trade.
